@@ -40,10 +40,13 @@
 # start the project
    cd 01_demo01
    ng serve
+   or
+   npm start
 
 # component
     ng generate component <component-name>
     ng g c <component-name>
+    Note: you should be inside the project directory
 
     >ng g c greet
     CREATE src/app/greet/greet.component.html (20 bytes)
@@ -52,6 +55,58 @@
     CREATE src/app/greet/greet.component.css (0 bytes)
     UPDATE src/app/app.module.ts (471 bytes)
 
+
+# step to add bootstrap
+    run the 
+    npm install --save bootstrap[@version]
+    eg: npm install --save bootstrap@3
+    Note: you should be inside the project directory
+
+    add the path of css in the angular.json file in styles properties
+    "node_modules/bootstrap/dist/css/bootstrap.min.css",
+
+    after adding it will look like as below:
+    "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+
+    
+    restart the server.(ctrl + c)
+
+# Selector in componenet
+## Type of selector
+    1. Element :   <app-person></app-person>
+    2. attribute : <div app-person></div> 
+    3. class :  <div class="app-person"></div>
+
+        @Component({
+        selector: 'app-person',
+        templateUrl: './person.component.html',
+        styleUrls: ['./person.component.css']
+        })
+
+        how to call:
+        <app-person></app-person>
+
+
+
+
+Binding:
+    Html                                TS
+    {{name}}                          name:'Jack'
+     
+           <--------------------------
+                {{string interpolation}}
+                [attribute-binding]
+
+     
+            -------------------------->
+                (eventBinding)="foo()"
+
+
+            <------------------------->
+                  [(ngModule)]=""
 
   
 
