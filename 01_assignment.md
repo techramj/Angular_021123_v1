@@ -22,3 +22,24 @@
             <app-person></app-person> //display the details of person3
 
             Note: display the person details in bootstrap-panel.
+
+
+
+        step 1:
+        ng g c person
+
+        person.component.html
+          Name: {{name}}
+          age: {{age}}
+          Hair color: {{hairColor}}
+
+        person.compoenent.ts
+            name = 'Jack123';
+            age ='23';
+            hiarColor = 'black';
+
+
+        app.componenet.htm
+          <app-person></app-person>
+
+        

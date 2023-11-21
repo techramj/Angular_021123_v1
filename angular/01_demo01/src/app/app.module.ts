@@ -8,6 +8,7 @@ import { PersonComponent } from './person/person.component';
 import { ElementSelectorComponent } from './element-selector/element-selector.component';
 import { AttrSelectorComponent } from './attr-selector/attr-selector.component';
 import { ClassSelectorComponent } from './class-selector/class-selector.component';
+import { PeopleComponent } from './people/people.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ClassSelectorComponent } from './class-selector/class-selector.componen
     PersonComponent,
     ElementSelectorComponent,
     AttrSelectorComponent,
-    ClassSelectorComponent
+    ClassSelectorComponent,
+    PeopleComponent
   ],
   imports: [
     BrowserModule,
