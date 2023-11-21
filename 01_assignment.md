@@ -6,19 +6,19 @@
         c. class
 
 # Assignment 2
-   create two component Person & People
+        create two component Person & People
 
-   In people component, declare three person.
-   person1, person2, person3 with 3 different value
-   eg: 
-   person1 = {name:'Jack', age:'22', hairColor:'black'};
+        In people component, declare three person.
+        person1, person2, person3 with 3 different value
+        eg: 
+        person1 = {name:'Jack', age:'22', hairColor:'black'};
 
-   call the people component in app-component
-   and call person in people component.
+        call the people component in app-component
+        and call person in people component.
 
-   people.component.html
-    <app-person></app-person> //display the details of person1
-    <app-person></app-person> //display the details of person2
-    <app-person></app-person> //display the details of person3
+        people.component.html
+            <app-person></app-person> //display the details of person1
+            <app-person></app-person> //display the details of person2
+            <app-person></app-person> //display the details of person3
 
-    Note: display the person details in bootstrap-panel.
+            Note: display the person details in bootstrap-panel.
