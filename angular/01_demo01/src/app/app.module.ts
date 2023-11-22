@@ -9,6 +9,9 @@ import { ElementSelectorComponent } from './element-selector/element-selector.co
 import { AttrSelectorComponent } from './attr-selector/attr-selector.component';
 import { ClassSelectorComponent } from './class-selector/class-selector.component';
 import { PeopleComponent } from './people/people.component';
+import { Person1Component } from './person1/person1.component';
+import { People1Component } from './people1/people1.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { PeopleComponent } from './people/people.component';
     ElementSelectorComponent,
     AttrSelectorComponent,
     ClassSelectorComponent,
-    PeopleComponent
+    PeopleComponent,
+    Person1Component,
+    People1Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

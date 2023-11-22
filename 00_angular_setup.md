@@ -106,9 +106,34 @@ Binding:
 
 
             <------------------------->
-                  [(ngModule)]=""
+                  [(ngModel)]=""
 
   
 
-   
+   communication between two component
+   app-component
+        <app-person name="Jack of app compenent" age="25">
+
+
+        person-component
+        name = "jackof app component"
+        age
+        hairColor
+
+
+
+Directive:
+    In Angular, Directives are defined as classes that can add new behavior to the elements in the template or modify existing behavior. 
+    The purpose of Directives in Angular is to maneuver the DOM, 
+    be it by adding new elements to DOM or removing elements 
+    and even changing the appearance of the DOM elements.
+
+    Type of Directive:
+    Structural:
+      ng-if
+      ng-for
+
+    attribute
+
+
    

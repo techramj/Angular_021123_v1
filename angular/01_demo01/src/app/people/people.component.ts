@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class PeopleComponent {
 
-  person1 = {name:'Jack', age:'23', hairColor:'jdkjsakd'};
-  person2 = {name:'jessica', age:'23', hairColor:'white'};
-  person3 = {name:'Jackson', age:'', hairColor:'black'};
+  person1 = {name:'Jack', age:23, hairColor:'abc'};
+  person2 = {name:'jessica', age:23, hairColor:'white'};
+  person3 = {name:'Jackson', age:29, hairColor:'black'};
 }
