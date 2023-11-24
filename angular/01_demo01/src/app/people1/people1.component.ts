@@ -18,12 +18,19 @@ export class People1Component {
 
 
   addPerson(){
-      let name = 'Elizabeth '+ (this.persons.length+1);
+     // let name = 'Elizabeth '+ (this.persons.length+1);
+
+     let name = this.defaultName;
+
       let age = 18 + Math.round(Math.random()*50);
-      let hairColor = 'Black';
+      let hairColor = this.defaultHairColor;
 
       //this.persons.push({'name':name, 'age':age, hairColor:hairColor});
       this.persons.push({name,age,hairColor});
       console.log(this.defaultName, this.defaultHairColor);
+  }
+
+  deletePerson(){
+    this.persons.pop();
   }
 }

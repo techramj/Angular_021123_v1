@@ -1,0 +1,94 @@
+<div class="container">
+  <h2>{{title}}</h2>
+  <h3 [ngClass]="['A','B']">{{title}}</h3>
+  <h4>{{title}}</h4>
+  <hr>
+
+  <input type="checkbox" [(ngModel)]="show" >Show/Hide Color <br>
+
+  <div *ngIf="show; else noColorChoice">
+    <h4>My Favourite color</h4>
+    <ul>
+      <li *ngFor="let c of colors"  [ngStyle]="{'color':c}">{{c}}</li>
+    </ul>
+  </div>
+
+  <ng-template #noColorChoice>
+    <font color="red" [size]="8">Don't Display Color List</font>
+  </ng-template>
+
+
+  <div>
+    <h3>Select Day</h3>
+    <input type="number" [(ngModel)]="day" [min]="min_day" [max]="max_day">
+    <div [ngSwitch]="day">
+      <p *ngSwitchCase="1">Monday</p>
+      <p *ngSwitchCase="2">Tuesday</p>
+      <p *ngSwitchCase="3">Wednesday</p>
+      <p *ngSwitchCase="4">Thursday</p>
+      <p *ngSwitchCase="5">Friday</p>
+      <p *ngSwitchCase="6">Saturday</p>
+      <p *ngSwitchCase="7">Sunday</p>
+      <p *ngSwitchDefault>I don't know the day. It's Holiday!!!</p>
+    </div>
+  </div>
+
+
+  <hr>
+
+  <button class="button btn-primary" (click)="showHide()"> Show/Hide  Details</button>
+  <br>
+
+  <div *ngIf="hide">
+      <h3> Details are:{{emp}}</h3>
+      <br>
+      <h5> Details are:{{emp | json}}</h5>
+
+      <pre>
+        Id       : {{emp.id}}
+
+        Name     : {{emp.name}}
+        Name     : {{emp.name | titlecase}}
+        Name     : {{emp.name | lowercase}}
+        Name     : {{emp.name | uppercase}}
+
+        Salary   : {{emp.salary}}
+        Salary   : {{emp.salary | number}}
+        Salary   : {{emp.salary | number:'7.2-4'}}
+        Salary   : {{emp.salary | currency}}
+        Salary   : {{emp.salary | currency:'INR'}}
+
+        Variable : {{emp.variable}}
+        Variable : {{emp.variable | percent}}
+
+        City     : {{emp.city | uppercase}}
+        Mobile   : {{emp.mobile}}
+        Mobile   : XXXXXXXX{{emp.mobile |slice:8:10}}
+
+        PAN NO   : {{emp.pan}}
+        PAN NO   : {{emp.pan|uppercase|slice:0:2}}XXXXXX{{emp.pan|uppercase|slice:8:10}}
+
+        Gender   : {{emp.gender}}
+        Married  : {{emp.isMarried}}
+
+        Doj      : {{emp.doj}}
+        Doj      : {{emp.doj | date}}
+        Doj      : {{emp.doj | date:'short'}}
+        Doj      : {{emp.doj | date:'medium'}}
+        Doj      : {{emp.doj | date:'long'}}
+        Doj      : {{emp.doj | date:'full'}}
+        Doj      : {{emp.doj | date:'dd-MM-yyyy hh:mm:ss'}}
+        Doj      : {{emp.doj | date:'shortTime'}}
+        Doj      : {{emp.doj | date:'mediumTime'}}
+        Doj      : {{emp.doj | date:'longTime'}}
+
+       <ol>
+         <li *ngFor="let kv of emp|keyvalue"><b>{{kv.key}}</b> => {{kv.value}}</li>
+       </ol>
+
+     </pre>
+
+  </div>
+
+
+</div>

@@ -1,12 +1,16 @@
 
 <div class="container">
   <button class="btn btn-success" (click)="addPerson()">Add Person</button>
-  <br><br>Name: <input type="text" [value]="defaultName">  {{defaultName}}
+  <button class="btn btn-danger" (click)="deletePerson()">Delete Person</button>
+  <br><br>Name: <input type="text" [(ngModel)]="defaultName">  {{defaultName}}
   <br><br>Hair Color: <input type="text" name="hairColor" [(ngModel)]="defaultHairColor"> {{defaultHairColor}}
   <br><br>
   <h3>Total number of Person: {{persons.length}}</h3>
   <hr>
   <div *ngFor="let item of persons">
+    <p>Name: {{item.name}}</p>
+    <p>Age: {{item.age}}</p>
+    <hr>
     <app-person1 [person]="item"></app-person1>
     <!-- <app-person [name]="item.name" [age]="item.age" [hairColor]="item.hairColor"></app-person> -->
   </div>
