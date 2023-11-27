@@ -9,7 +9,7 @@
   <div *ngIf="show; else noColorChoice">
     <h4>My Favourite color</h4>
     <ul>
-      <li *ngFor="let c of colors"  [ngStyle]="{'color':c}">{{c}}</li>
+      <li *ngFor="let c of colors"  [ngStyle]="{styleColor:c}">{{c}}</li>
     </ul>
   </div>
 
@@ -55,6 +55,9 @@
         Salary   : {{emp.salary}}
         Salary   : {{emp.salary | number}}
         Salary   : {{emp.salary | number:'7.2-4'}}
+        Salary   : {{emp.salary | number:'8.2-4'}}
+        Salary   : {{emp.salary | number:'9.2-7'}}
+        Salary   : {{emp.salary | number:'10.2-10'}}
         Salary   : {{emp.salary | currency}}
         Salary   : {{emp.salary | currency:'INR'}}
 
@@ -72,7 +75,7 @@
         Married  : {{emp.isMarried}}
 
         Doj      : {{emp.doj}}
-        Doj      : {{emp.doj | date}}
+        Doj      : {{emp.doj | date }}
         Doj      : {{emp.doj | date:'short'}}
         Doj      : {{emp.doj | date:'medium'}}
         Doj      : {{emp.doj | date:'long'}}

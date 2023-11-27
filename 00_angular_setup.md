@@ -46,6 +46,7 @@
 # component
     ng generate component <component-name>
     ng g c <component-name>
+    ng g c <component-name> --skip-tests
     Note: you should be inside the project directory
 
     >ng g c greet

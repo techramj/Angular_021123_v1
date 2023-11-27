@@ -90,8 +90,7 @@ app.modules.ts
 
 # ngFor
 
-
-# ngSwitch
+# ngSwitch ngSwitchCase  ngSwitchDefault
 
 # ngStyle
 

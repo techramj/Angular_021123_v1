@@ -1,5 +1,10 @@
+
+<!--
 <h3 align="center">App Component</h3>
 <h4 align="center">App Component</h4>
 <app-angular-basic></app-angular-basic>
+-->
+
+<app-servers [servers]="servers"  (addServerEvent)="addServer($event)"></app-servers>
 
 <router-outlet></router-outlet>

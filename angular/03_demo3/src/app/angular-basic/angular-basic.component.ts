@@ -14,6 +14,7 @@ export class AngularBasicComponent {
   day  = 5;
   min_day = 1;
   max_day = 8;
+  styleColor:string = 'color';
 
 
   show = true;  //to way binding
