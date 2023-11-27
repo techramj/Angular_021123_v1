@@ -1,0 +1,62 @@
+   
+abc.comp.html				 				 abc.comp.ts 
+ 
+<h1>Welcome {{name}}!</h1>    <--------------    name = 'Jack';
+
+<button [disabled] ="isButtonEnabled">Click<button>            isButtonEnabled = true
+   
+   
+   bind .ts to html  => string interpolation  {{data}}
+                        property binding    [property] ="data"
+						
+						
+
+
+abc.comp.html		-------------------> abc.comp.ts 
+  <button>								
+  (event) = "functioncall"
+  
+  
+
+abc.comp.html		<-------------------> abc.comp.ts  
+[(ngModel)]
+
+
+
+app.component
+		<app-servers></app-servers>
+		 ts => servers detais
+
+
+servers.component
+ 
+        button on click => Add server
+		
+   app-server [name] [status]>
+
+
+
+
+
+
+server.component
+	 @Input() name
+	 status
+	 
+
+
+app.component
+   servers= [{}];
+   
+   addServer(){
+   }
+   
+   
+servers.component
+      how you will pass the app.comp servers value to servers.comp
+	  onButtonClicked()
+	  }
+	  abc
+	  online
+	  click on Add serverServer
+	  <button (click) = "addServer()")>
