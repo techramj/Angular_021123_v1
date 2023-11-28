@@ -97,4 +97,31 @@ app.modules.ts
 # ngClass
 
 
-  
+
+
+# assignment 5
+  create three component
+    button-count-page
+      <app-button-message>
+      <app-button>
+
+    button-count 
+        button clicked
+    button-message
+        Congratulation!, You received Platinum batch.
+
+
+
+    Congratulation!, You received Silver batch.
+    button 
+    Button clicked  5 times
+
+
+    Congratulation!, You received Golden batch.
+    button 
+    Button clicked  10 times
+
+
+    Congratulation!, You received Platinum batch.
+    button 
+    Button clicked  20 times
