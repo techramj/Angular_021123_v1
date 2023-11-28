@@ -60,3 +60,15 @@ servers.component
 	  online
 	  click on Add serverServer
 	  <button (click) = "addServer()")>
+
+
+   
+
+   router 
+   forms
+   service 
+   http 
+   observable
+   lifecycle of component 
+   
+ 

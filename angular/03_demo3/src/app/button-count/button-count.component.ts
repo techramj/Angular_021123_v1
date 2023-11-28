@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button-count',
@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonCountComponent {
   @Input() count:number = 0;
+  @Output() countEvent = new EventEmitter();
+
+  onButtonClick(){
+    this.countEvent.emit();
+  }
 }

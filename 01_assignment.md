@@ -125,3 +125,6 @@ app.modules.ts
     Congratulation!, You received Platinum batch.
     button 
     Button clicked  20 times
+
+
+Routing

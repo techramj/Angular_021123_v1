@@ -1,2 +1,6 @@
-<app-button-message></app-button-message>
-<app-button-count></app-button-count>
+
+<app-button-message [countInMessage]="buttonCount" ></app-button-message>
+<button class="btn btn-danger" (click)="addCount()">Click here</button>
+<p>count= {{buttonCount}}</p>
+<app-button-count [count]="buttonCount"></app-button-count>
+

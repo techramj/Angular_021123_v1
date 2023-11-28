@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./button-count-page.component.css']
 })
 export class ButtonCountPageComponent {
+  buttonCount:number = 0;
+  msg:string ="";
+  displayMessage:boolean = false;
 
+  addCount(){
+      this.buttonCount = ++this.buttonCount;
+  }
 }
