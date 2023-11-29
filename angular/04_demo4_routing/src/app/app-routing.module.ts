@@ -10,7 +10,7 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'home', component:HomeComponent},
   {path:'emp', component:EmpComponent},
-  {path:'greet', component:GreetComponent},
+  {path:'greet/:name', component:GreetComponent},
   {path:'', redirectTo:'login', pathMatch:'full'},
   {path:'**', component:PageNotFoundComponent}
 ];
