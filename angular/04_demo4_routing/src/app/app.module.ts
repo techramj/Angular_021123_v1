@@ -11,6 +11,9 @@ import { QueryExampleComponent } from './query-example/query-example.component';
 import { GreetComponent } from './greet/greet.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { FarewellComponent } from './farewell/farewell.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { LoginComponent } from './login/login.component';
     QueryExampleComponent,
     GreetComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    FarewellComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

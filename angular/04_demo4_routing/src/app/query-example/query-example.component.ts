@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-query-example',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./query-example.component.css']
 })
 export class QueryExampleComponent {
+
+  constructor(private route:ActivatedRoute){
+
+  }
+
+  ngOnInit(): void {
+
+    // console.log(this.route.queryParams);
+    this.route.queryParams.subscribe(params => console.log(params));
+  }
 
 }

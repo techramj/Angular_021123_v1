@@ -7,16 +7,24 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonMessageComponent {
   @Input() countInMessage:number = 0;
-  batch:string ="silver";
+  batch:string ="silvButtonMessageComponenter";
   displayMessage:boolean = false;
-  msg1 = "Congratulation!, You received silver batch";
-  msg2 = "Congratulation!, You received golden batch";
-  msg3 = "Congratulation!, You received platinum batch";
+  msg: string = ''
 
+  ngOnChanges() : void{
+   console.log('ButtonMessageComponent ngOnChanges called!!!')
 
-
-
-
+    this.displayMessage = true;
+    if(this.countInMessage == 5){
+      this.msg = "Congratulation!, You received silver batch";
+    }else   if(this.countInMessage == 10){
+      this.msg = "Congratulation!, You received golden batch";
+    }else if(this.countInMessage == 20){
+      this.msg = "Congratulation!, You received platinum batch";
+    }else{
+      this.displayMessage = false;
+    }
+  }
 
 
 }

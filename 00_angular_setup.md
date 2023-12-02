@@ -134,7 +134,81 @@ Directive:
       ng-if
       ng-for
 
-    attribute
 
 
-   
+
+# service
+
+   @Component({
+        selector: 'app-comp1',
+        templateUrl: './comp1.component.html',   --view
+        styleUrls: ['./comp1.component.css']
+        })
+
+    data to be rendered => ts
+
+    logic => ts
+
+
+    @Component({
+        selector: 'app-comp2',
+        templateUrl: './comp2.component.html',   --view
+        styleUrls: ['./comp2.component.css']
+        })
+
+      to share the data/logic between two componenet 
+      @Input() / @Output()
+
+      to get rid of this, we can use service
+      Service is a class used to seperate the logic from the view.
+      if you want to share the data, then we can use service.
+
+      eg: logging,validation & interacting with APIs, exposing data.
+
+
+      how to write the service
+      ng g s service-name
+      shared
+        logging.service.ts
+
+     three ways to use the service
+
+      @Injectable -default
+      @NgModule  --lazy binding
+      @Component --
+
+
+
+            
+        @Injectable - root
+        ServiceA
+
+                App.comp 
+                
+            servers.comp     Account.comp
+
+            server.comp
+
+
+         @NgModule(
+
+            providers:[ServiceA]
+         ){
+            
+         }
+
+
+         @Component(
+            selector: 'app-servres'
+             providers:[ServiceA]
+         )
+
+          @Component(
+            selector: 'app-account'
+             providers:[ServiceA]
+         )
+
+          @Component(
+            selector: 'dashboard'
+             providers:[ServiceA]
+         )
