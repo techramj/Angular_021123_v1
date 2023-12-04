@@ -212,3 +212,99 @@ Directive:
             selector: 'dashboard'
              providers:[ServiceA]
          )
+
+
+
+# Observable vs Promise 
+
+## observable
+        1. Open stream
+        2. return multiple value
+        3. can be cancelled
+        4. are lazy
+
+
+## promise
+        1. open and close
+        2. return single value
+        3. cannot be cancelled
+        4. are not lazy or eager loading
+
+## Observable 
+        1. to subscribe use subscribe() method
+        2. subscribe has three function:  next, error, completed
+          
+        observable.subscribed((data)=>{
+            //
+        });
+
+
+# create server expose rest api
+    step 1: create the folder.
+    eg ems
+    cd ems
+    ems>
+
+    step 2: execute the below command
+    npm init -y
+
+    step 3: create the json file
+    eg: employees.json
+
+    step 4: add few dummy data in employees.json file
+    eg:
+
+        {
+            "employees":[
+                {"id":1, "name":"Sam", "salary":1000, "email":"sam@test.com"},
+                {"id":2, "name":"Jack", "salary":2000, "email":"Jack@test.com"},
+                {"id":3, "name":"Ajay", "salary":3000, "email":"Ajay@test.com"},
+                {"id":4, "name":"Vijay", "salary":4000, "email":"Vijay@test.com"},
+                {"id":5, "name":"Jessica", "salary":5000, "email":"Jessica@test.com"}
+            ]
+        }
+    
+    step 5: execute the below command
+        npm install -g json-server
+
+    step 6: add below in package.json file in scrips property.
+    "start" : "npx json-server --watch employees.json"
+
+    step 7: start the server
+    npm start
+
+    step 8: test the api
+    get
+    expose all the employees
+     url: http://localhost:3000/employees
+     method: get
+
+    detail of employee for a given id
+     url: http://localhost:3000/employees/:id
+     method: get
+
+    add the employees
+    url: http://localhost:3000/employees
+    method: post
+    body: 
+    {
+        "name": "Sameer",
+        "salary": 14000,
+        "email": "sameer@test.com"
+    }
+
+    update the employee with id = ?
+    url: http://localhost:3000/employees/:id
+    method: put
+    {
+        "id": 4,
+        "name": "Vijay",
+        "salary": 9999,
+        "email": "Vijay@gmail.com"
+    }
+
+    delete
+    url: http://localhost:3000/employees/:id
+    method: delete
+
+

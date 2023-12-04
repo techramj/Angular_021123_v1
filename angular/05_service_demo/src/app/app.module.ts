@@ -11,6 +11,12 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { AccountComponent } from './account/account.component';
 import { LoggingService } from './shared/logging.service';
+import { Observable1Component } from './observable/observable1/observable1.component';
+import { Observable2Component } from './observable/observable2/observable2.component';
+import { Observable3Component } from './observable/observable3/observable3.component';
+import { Promise1Component } from './promise/promise1/promise1.component';
+import { Promise2Component } from './promise/promise2/promise2.component';
+import { Observable4Component } from './observable/observable4/observable4.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,13 @@ import { LoggingService } from './shared/logging.service';
     PageNotFoundComponent,
     ServerComponent,
     ServersComponent,
-    AccountComponent
+    AccountComponent,
+    Observable1Component,
+    Observable2Component,
+    Observable3Component,
+    Promise1Component,
+    Promise2Component,
+    Observable4Component
   ],
   imports: [
     BrowserModule,
