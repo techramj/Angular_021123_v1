@@ -1,12 +1,6 @@
 {
   "employees": [
     {
-      "id": 1,
-      "name": "Sam",
-      "salary": 1000,
-      "email": "sam@test.com"
-    },
-    {
       "id": 2,
       "name": "Jack",
       "salary": 2000,
@@ -17,12 +11,6 @@
       "name": "Ajay",
       "salary": 3000,
       "email": "Ajay@test.com"
-    },
-    {
-      "id": 4,
-      "name": "Vijay",
-      "salary": 9999,
-      "email": "Vijay@gmail.com"
     }
   ]
 }

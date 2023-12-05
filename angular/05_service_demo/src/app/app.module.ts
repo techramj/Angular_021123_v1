@@ -17,6 +17,10 @@ import { Observable3Component } from './observable/observable3/observable3.compo
 import { Promise1Component } from './promise/promise1/promise1.component';
 import { Promise2Component } from './promise/promise2/promise2.component';
 import { Observable4Component } from './observable/observable4/observable4.component';
+import { EmpCreateComponent } from './emp-create/emp-create.component';
+import { EmpEditComponent } from './emp-edit/emp-edit.component';
+import { EmpListComponent } from './emp-list/emp-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,11 +37,15 @@ import { Observable4Component } from './observable/observable4/observable4.compo
     Observable3Component,
     Promise1Component,
     Promise2Component,
-    Observable4Component
+    Observable4Component,
+    EmpCreateComponent,
+    EmpEditComponent,
+    EmpListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

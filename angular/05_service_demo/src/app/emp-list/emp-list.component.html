@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div>
+    <h3 class="mb-3-text-center">Employees Details</h3>
+    <div class="com-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>Email</th>
+          <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of empList">
+              <td>{{emp.id}}</td>
+              <td>{{emp.name}}</td>
+              <td>{{emp.salary}}</td>
+              <td>{{emp.email}}</td>
+              <td>
+
+                <button class="btn btn-primary" routerLink="/emp-edit/{{emp.id}}">Edit</button> &nbsp;&nbsp;&nbsp;
+                <button class="btn btn-danger" (click)="deleteEmp(emp.id)" >Delete</button>
+              </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
