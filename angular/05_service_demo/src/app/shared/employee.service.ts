@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class EmployeeService {
 
-   url :string = "http://localhost:3000/employees";
+   //url :string = "http://localhost:3000/employees";
+   url:string ="http://localhost:8080/employees";
   constructor(private http:HttpClient) { }
 
   getEmployees(): Observable<any>{
