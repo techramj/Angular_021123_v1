@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../shared/employee.service';
+import { Employee } from '../shared/model/employee';
 
 @Component({
   selector: 'app-emp-list',
@@ -8,7 +9,7 @@ import { EmployeeService } from '../shared/employee.service';
 })
 export class EmpListComponent implements OnInit {
 
-   empList:{id:number,name:string,salary:number,email:string}[] = [];
+   empList:Employee[] = [];
 
   constructor(private empService:EmployeeService){}
 
