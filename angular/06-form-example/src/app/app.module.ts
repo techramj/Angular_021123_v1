@@ -9,6 +9,7 @@ import { Form3Component } from './form3/form3.component';
 import { Form4Component } from './form4/form4.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { EmpListComponent } from './emp-list/emp-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     Form2Component,
     Form3Component,
     Form4Component,
-    HeaderComponent
+    HeaderComponent,
+    EmpListComponent
   ],
   imports: [
     BrowserModule,

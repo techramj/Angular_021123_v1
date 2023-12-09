@@ -14,6 +14,7 @@ import { Promise1Component } from './promise/promise1/promise1.component';
 import { Promise2Component } from './promise/promise2/promise2.component';
 import { EmpListComponent } from './emp-list/emp-list.component';
 import { EmpEditComponent } from './emp-edit/emp-edit.component';
+import { EmpCreateComponent } from './emp-create/emp-create.component';
 
 const routes: Routes = [
   {path:'dashboard1', component:Dashboard1Component},
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path:'promise2', component:Promise2Component},
   {path:'emp-edit/:id', component:EmpEditComponent},
   {path:'emp-list', component:EmpListComponent},
+  {path:'add-emp', component:EmpCreateComponent},
   {path:'**', component:PageNotFoundComponent}
 ];
 

@@ -21,6 +21,7 @@ import { EmpCreateComponent } from './emp-create/emp-create.component';
 import { EmpEditComponent } from './emp-edit/emp-edit.component';
 import { EmpListComponent } from './emp-list/emp-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

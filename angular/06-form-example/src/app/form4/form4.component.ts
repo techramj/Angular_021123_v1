@@ -10,7 +10,8 @@ export class Form4Component {
 
   @ViewChild('loginForm') form:NgForm;
   defaultQuestion:string = 'school';
-  a:number;
+  answer:string = '';
+  gender:string[] =['female', 'male'];
 
   questioniare:{question:string, desc:string}[] = [
     {question:'movie', desc:'Favourite Movie'},
@@ -25,8 +26,10 @@ export class Form4Component {
     let name = this.form.value.username;
     let email = this.form.value.email;
     let question = this.form.value.question;
+    let answer = this.form.value.answer;
     console.log(`Name =${name} & Email = ${email}  & question =${question}`);
-    console.log(this.defaultQuestion);
+    console.log('default question: ',this.defaultQuestion);
+    console.log('Ans: '+answer, this.answer);
   }
 
 }
