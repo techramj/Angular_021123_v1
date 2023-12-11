@@ -308,3 +308,20 @@ Directive:
     method: delete
 
 
+# unit testing
+
+    why?
+    Performing unit testing prevent the breaking of changes when we update or add features
+    TDD can help us to do write robust program.
+
+
+    Tools:
+    Jasmine and Karma are used to run the unit test in angular.
+
+
+    Jasmine is a BDD(Behaviour Driven Development) tesing framework.
+            Describe the test in a human readoble way.
+
+    To Test run the below  command
+    ng test
+    
